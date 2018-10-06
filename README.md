@@ -1,2 +1,4 @@
 # 00-Scripts
-some of my favorite bash scripts
+Some of my favorite bash scripts
+
+
