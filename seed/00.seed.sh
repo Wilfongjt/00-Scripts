@@ -80,9 +80,14 @@ echo "--------------------------"
 npm i --save-dev dotenv
 npm install --save-dev @nuxtjs/dotenv
 
+
+
 #####################
 # GOOGLE MAPS
 ######################
+
+source 00.google.map.sh
+
 echo "--------------------------"
 echo " Google Maps"
 echo "--------------------------"

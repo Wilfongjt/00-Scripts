@@ -1,9 +1,25 @@
 # VueJS Seed App
 Generates a preconfigured vuejs application.  
 ## Features
-* Google map
-* Environment Variable
+* nuxtjs
+* es-lint
+* eslint-plugin-vue
+* eslint-config-prettier
+* dotenv
+* @nuxtjs/dotenv
+* vue2-google-maps
+* sass-loader 
+* webpack
 
+
+## Set Application Name
+Change app_name to your app name. 
+```
+# 00.assemble.sh
+
+app_name="your-app-name"
+```
+Don't worry you can run this script more than once without harm. 
 
 ## Environment Variables
 
