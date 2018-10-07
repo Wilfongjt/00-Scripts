@@ -41,20 +41,23 @@ if [ ! -f $pageFile ]; then
 else
   echo "File exists, can't write file $pageFile"
 fi
-
+echo "B"
 ##########
 # Page
 # assume the develper is going to change this file and don't overwrite if exists
 # delete file if you need to replace it
+# stop creation add .txt to google-maps.vue i.e., google-maps.vue.txt
 #########
 pageFile="pages/google-maps.vue"
 if [ ! -f $pageFile ]; then
-  write_google_maps_vue $pageFile
+    if [ ! -f "$pageFile.txt" ]; then
+        write_google_maps_vue $pageFile
+    fi
 else
   echo "File exists, can't write file $pageFile"
 fi
 
-
+echo "C"
 
 ###############
 # Environment Varible
@@ -68,7 +71,7 @@ if [ $rc -eq 0 ]; then
   rpls+=("    GOOGLE_MAPS_JAVASCRIPT_API_KEY: process.env.GOOGLE_MAPS_JAVASCRIPT_API_KEY,")
   insert_after_file "nuxt.config.js" "$rpl" "${rpls[@]}"
 fi
-
+echo "D"
 rc=$(has_value ".env" "GOOGLE_MAPS_JAVASCRIPT_API_KEY")
 echo "has_value is $rc"
 if [ $rc -eq 0 ]; then

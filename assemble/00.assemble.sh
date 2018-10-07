@@ -10,7 +10,7 @@ source ../functions/write_google_maps_vue.sh
 source ../functions/write_vue2_google_maps_js.sh
 
 # intall npx is included with NPM
-app_name="seed_12"
+app_name="adopt_a_drain"
 # move to umbrella folder
 cd ../..
 
