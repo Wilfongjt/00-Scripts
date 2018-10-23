@@ -5,7 +5,7 @@ echo "01.LINT"
 ###################
 
 npm install eslint@3.14.1
-
+npm install eslint@4.0.0
 ###################
 # replaces eslint-plugin-vue
 ###################
